@@ -30,7 +30,6 @@ componentWillMount() {
               <a className="btn btn-primary btn-lg" onClick={() => this.componentWillMount()} href="#" role="button">Sample Button</a>
             </p>
             </div>
-            {/* <div className= "well well-lg"><pre>{ JSON.stringify(this.state.topspots, null, 2) }</pre></div> */}
             { 
       this.state.topspots.map(topspot => (
           <TopSpot
@@ -38,9 +37,9 @@ componentWillMount() {
               name={topspot.name}
               description={topspot.description}
               location={topspot.location} />
-      ))
-  }
-          </div>
+          ))
+      }
+      </div>
     );
    
   }
